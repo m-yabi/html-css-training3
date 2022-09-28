@@ -1,1 +1,135 @@
-/*# sourceMappingURL=sousaku.css.map */
+/*** The new CSS reset - version 1.5.1 (last updated 1.3.2022) ***/
+*:where(:not(iframe, canvas, img, svg, video):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a,
+button {
+  cursor: revert;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+textarea {
+  white-space: revert;
+}
+
+meter {
+  -webkit-appearance: revert;
+  -moz-appearance: revert;
+       appearance: revert;
+}
+
+::-moz-placeholder {
+  color: unset;
+}
+
+:-ms-input-placeholder {
+  color: unset;
+}
+
+::placeholder {
+  color: unset;
+}
+
+:where([hidden]) {
+  display: none;
+}
+
+:where([contenteditable]) {
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  -webkit-line-break: after-white-space;
+}
+
+:where([draggable=true]) {
+  -webkit-user-drag: element;
+}
+
+img {
+  width: 100%;
+  vertical-align: top;
+}
+
+body {
+  font-family: "Noto Serif JP", serif;
+}
+
+.header {
+  color: white;
+}
+
+.main-visual {
+  height: 100vh;
+  position: relative;
+}
+.main-visual img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.header-menu {
+  flex-direction: row-reverse;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  position: absolute;
+}
+@media (min-width: 751px) {
+  .header-menu {
+    top: 60px;
+    right: 80px;
+  }
+}
+.header-menu img {
+  width: 40px;
+}
+.header-menu .logo {
+  margin-left: 60px;
+}
+.header-menu li:not(:last-child) {
+  margin-left: 25px;
+}
+
+.online__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 68px;
+  height: 257px;
+  color: white;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  position: absolute;
+}
+@media (min-width: 751px) {
+  .online__btn {
+    bottom: 38px;
+    left: 48px;
+  }
+}
+.online__btn a {
+  display: inline-block;
+  text-align: center;
+  width: 52px;
+  height: 240px;
+  padding: 20px 15px 20px 15px;
+  border: 1px solid #cccccc;
+}/*# sourceMappingURL=sousaku.css.map */

@@ -132,4 +132,70 @@ body {
   height: 240px;
   padding: 20px 15px 20px 15px;
   border: 1px solid #cccccc;
+}
+
+main {
+  background-color: #e6e2d7;
+}
+
+.container {
+  max-width: 1024px;
+  margin: auto;
+}
+
+.news__wrapper {
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  margin-right: 0;
+  margin-left: auto;
+}
+.news__wrapper dl {
+  margin-right: 100px;
+  margin-top: 270px;
+}
+.news__wrapper dd {
+  border-left: 1px solid black;
+  padding: 20px 10px 20px 30px;
+  font-size: 15px;
+}
+.news__wrapper dt {
+  padding: 20px 30px 20px 0px;
+  font-size: 12px;
+}
+.news__wrapper dt:first-child {
+  border-right: 1px solid black;
+}
+
+.wrapper__title1 {
+  margin-top: 180px;
+}
+
+.title {
+  font-size: 36px;
+}
+
+.sub-title {
+  font-size: 12px;
+}
+
+.wrapper__title {
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+}
+
+.main__wrapper {
+  margin-top: 180px;
+}
+
+.create_science {
+  display: flex;
+}
+
+.create_science:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.create__image {
+  max-width: 639px;
+  height: 426px;
 }/*# sourceMappingURL=sousaku.css.map */

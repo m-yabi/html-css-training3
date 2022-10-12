@@ -21,10 +21,8 @@ body {
     top: 60px;
     right: 80px;
   }
-  img {
-    width: 40px;
-  }
   .logo {
+    width: 40px;
     margin-left: 60px;
   }
   li:not(:last-child) {
@@ -139,4 +137,56 @@ main {
   position: absolute;
   top: 410px;
   right: 310px;
+}
+footer {
+  background-color: black;
+  color: white;
+}
+.footer {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.footer-menu {
+  flex-direction: row-reverse;
+  writing-mode: vertical-rl;
+  margin-right: 0;
+  margin-left: auto;
+  padding-top: 80px;
+  address {
+    text-orientation: upright;
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  .logo {
+    width: 40px;
+    margin-right: 80px;
+    margin-left: 60px;
+  }
+  li:not(:last-child) {
+    margin-left: 25px;
+  }
+  .footer-list {
+    margin-right: 60px;
+    font-size: 16px;
+  }
+}
+.footer__btn {
+  font-size: 14px;
+  writing-mode: vertical-rl;
+  padding-top: 80px;
+  padding-left: 30px;
+  .online {
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+  }
+  .inquiry {
+    padding-top: 5px;
+  }
+}
+small {
+  display: block;
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 10px;
 }

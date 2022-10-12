@@ -97,10 +97,8 @@ body {
     right: 80px;
   }
 }
-.header-menu img {
-  width: 40px;
-}
 .header-menu .logo {
+  width: 40px;
   margin-left: 60px;
 }
 .header-menu li:not(:last-child) {
@@ -232,4 +230,62 @@ main {
   position: absolute;
   top: 410px;
   right: 310px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.footer-menu {
+  flex-direction: row-reverse;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  margin-right: 0;
+  margin-left: auto;
+  padding-top: 80px;
+}
+.footer-menu address {
+  text-orientation: upright;
+  font-size: 14px;
+  line-height: 25px;
+}
+.footer-menu .logo {
+  width: 40px;
+  margin-right: 80px;
+  margin-left: 60px;
+}
+.footer-menu li:not(:last-child) {
+  margin-left: 25px;
+}
+.footer-menu .footer-list {
+  margin-right: 60px;
+  font-size: 16px;
+}
+
+.footer__btn {
+  font-size: 14px;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  padding-top: 80px;
+  padding-left: 30px;
+}
+.footer__btn .online {
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+}
+.footer__btn .inquiry {
+  padding-top: 5px;
+}
+
+small {
+  display: block;
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 10px;
 }/*# sourceMappingURL=sousaku.css.map */

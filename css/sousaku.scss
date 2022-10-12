@@ -6,11 +6,28 @@ body {
   color: white;
 }
 .main-visual {
-  height: 100vh;
   position: relative;
+  height: 100vh;
   img {
     height: 100%;
     object-fit: cover;
+  }
+  @include pc {
+    .pc {
+      display: block !important;
+    }
+    .sp {
+      display: none !important;
+    }
+  }
+  @include sp {
+    width: 100%;
+    .pc {
+      display: none !important;
+    }
+    .sp {
+      display: block !important;
+    }
   }
 }
 .header-menu {
@@ -20,6 +37,10 @@ body {
   @include pc {
     top: 60px;
     right: 80px;
+  }
+  @include sp {
+    top: 20px;
+    right: 25px;
   }
   .logo {
     width: 40px;
@@ -43,6 +64,10 @@ body {
     bottom: 38px;
     left: 48px;
   }
+  @include sp {
+    bottom: 20px;
+    left: 20px;
+  }
   a {
     display: inline-block;
     text-align: center;
@@ -56,28 +81,32 @@ main {
   background-color: #e6e2d7;
 }
 .container {
-  max-width: 1024px;
-  margin: auto;
+  @include pc {
+    max-width: 1024px;
+    margin: auto;
+  }
 }
 .news__wrapper {
   writing-mode: vertical-rl;
-  margin-right: 0;
-  margin-left: auto;
-  dl {
-    margin-right: 100px;
-    margin-top: 270px;
-  }
-  dd {
-    border-left: 1px solid black;
-    padding: 20px 10px 20px 30px;
-    font-size: 15px;
-  }
-  dt {
-    padding: 20px 30px 20px 0px;
-    font-size: 12px;
-  }
-  dt:first-child {
-    border-right: 1px solid black;
+  @include pc {
+    margin-right: 0;
+    margin-left: auto;
+    dl {
+      margin-right: 100px;
+      margin-top: 270px;
+    }
+    dd {
+      border-left: 1px solid black;
+      padding: 20px 10px 20px 30px;
+      font-size: 15px;
+    }
+    dt {
+      padding: 20px 30px 20px 0px;
+      font-size: 12px;
+    }
+    dt:first-child {
+      border-right: 1px solid black;
+    }
   }
 }
 .wrapper__title1 {
@@ -107,36 +136,42 @@ main {
 }
 
 .create__image {
-  max-width: 639px;
-  height: 426px;
-  margin-top: 100px;
-  margin-bottom: 180px;
-  margin-right: 20px;
-  margin-left: 20px;
+  @include pc {
+    max-width: 639px;
+    height: 426px;
+    margin-top: 100px;
+    margin-bottom: 180px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
 }
 .create__text1 {
-  max-width: 358px;
-  height: 137px;
-  background-color: #f9e90699;
-  opacity: 1;
-  color: white;
-  padding: 50px 110px;
-  font-size: 16px;
-  position: absolute;
-  top: 410px;
-  left: 290px;
+  @include pc {
+    max-width: 358px;
+    height: 137px;
+    background-color: #f9e90699;
+    opacity: 1;
+    color: white;
+    padding: 50px 110px;
+    font-size: 16px;
+    position: absolute;
+    top: 410px;
+    left: 290px;
+  }
 }
 .create__text2 {
-  max-width: 358px;
-  height: 137px;
-  background-color: #952a2699;
-  opacity: 1;
-  color: white;
-  padding: 50px 110px;
-  font-size: 16px;
-  position: absolute;
-  top: 410px;
-  right: 310px;
+  @include pc {
+    max-width: 358px;
+    height: 137px;
+    background-color: #952a2699;
+    opacity: 1;
+    color: white;
+    padding: 50px 110px;
+    font-size: 16px;
+    position: absolute;
+    top: 410px;
+    right: 290px;
+  }
 }
 footer {
   background-color: black;

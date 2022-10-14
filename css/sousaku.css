@@ -243,8 +243,15 @@ main {
   }
 }
 
-.sub-title.sub-title1 {
+.sub-title,
+.sub-title1 {
   font-size: 12px;
+}
+
+@media (max-width: 750px) {
+  .sub-title1 {
+    margin-left: 10px;
+  }
 }
 
 @media (max-width: 750px) {
@@ -421,7 +428,6 @@ footer {
   -ms-writing-mode: tb-rl;
       writing-mode: vertical-rl;
   padding-top: 80px;
-  padding-left: 30px;
 }
 .footer__btn .online {
   border-bottom: 1px solid white;
@@ -429,6 +435,16 @@ footer {
 }
 .footer__btn .inquiry {
   padding-top: 5px;
+}
+@media (min-width: 751px) {
+  .footer__btn {
+    padding-left: 30px;
+  }
+}
+@media (max-width: 750px) {
+  .footer__btn {
+    padding-left: 20px;
+  }
 }
 
 small {

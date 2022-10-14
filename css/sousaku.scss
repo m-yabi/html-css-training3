@@ -147,8 +147,14 @@ main {
     font-size: 24px;
   }
 }
-.sub-title.sub-title1 {
+.sub-title,
+.sub-title1 {
   font-size: 12px;
+}
+.sub-title1 {
+  @include sp {
+    margin-left: 10px;
+  }
 }
 .sub-title {
   @include sp {
@@ -291,13 +297,18 @@ footer {
   font-size: 14px;
   writing-mode: vertical-rl;
   padding-top: 80px;
-  padding-left: 30px;
   .online {
     border-bottom: 1px solid white;
     padding-bottom: 5px;
   }
   .inquiry {
     padding-top: 5px;
+  }
+  @include pc {
+    padding-left: 30px;
+  }
+  @include sp {
+    padding-left: 20px;
   }
 }
 small {
